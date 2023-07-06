@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <div class="container">
+        
+        <div><p>Arrastra los objetos que deseas adquirir...</p></div>
+
+        <div id="background">
+        <div id="left">
+            
+            <div class="list" id="apple" draggable="true"><img draggable="false" src="potion-red.svg">
+                <p>Love Elixir <span id="priceApple">10</span> coins</p>
+                <span class="tooltip">A very special elixir, careful with it!</span>
+            </div>
+
+            <div class="list" id="lemon" draggable="true"><img draggable="false" src="potion-blue.svg">
+                <p>Heal Potion <span id="priceLemon">25</span> coins</p>
+                <span class="tooltip">Very useful for when you are at the edge of death.</span>
+            </div>
+
+            <div class="list" id="carrot" draggable="true"><img draggable="false" src="potion-green.svg">
+                <p>Poison <span id="priceCarrot">30</span> coins</p>
+                <span class="tooltip">What are your intentions with this?</span>
+            </div>
+
+            <div class="list" id="pepper" draggable="true"><img draggable="false" src="potion-purple.svg">
+                <p>Moon Extract <span id="pricePepper">50</span> coins</p>
+                <span class="tooltip">We went to the moon and brought this back.</span>
+            </div>
+
+        </div>
+
+        <div id="cesta">
+
+        <div id="titular"><p>Cesta:</p></div>
+        <div id="right"></div>
+
+        <div id="center"><p>Total = <span id="total"></span> coins</p></div>
+        </div>
+        </div>
+
+    </div>
+
+    
+
+    <script src="app.js"></script>
+
+</body>
+</html>

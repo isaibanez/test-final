@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(131,58,180);
+    background: linear-gradient(56deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#background{
+    display: flex;
+    background: #444444;
+    border: 6px ridge #e91e63;
+    width: 100%;
+    min-height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#left, #right{
+    width: auto;
+    min-width: 250px;
+    min-height: 400px;
+    margin: 20px;
+    border: 6px ridge #e91e63;
+    background: black;
+}
+
+
+#center{
+    border: 6px ridge #e91e63;
+    background: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width:auto;
+}
+
+#cesta{
+    width:500px;
+    display:flex;
+    flex-direction:column;
+    margin-top:20px;
+}
+
+.list{
+    background: rgba(131,58,180,1);
+    border: 4px ridge #e91e63;
+    height: auto;
+    width: auto;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+
+.list img{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    position: relative;
+}
+
+
+p{
+    color: #fff;
+    font-family: 'Press Start 2P';
+    font-size: 12px;
+}
+
+#titular{
+    margin-left:20px;
+}
+
+.list .tooltip{
+    width:auto;
+    background-color:black;
+    color:#fff;
+    text-align:center;
+    border-radius:6px;
+    padding: 5px 0;
+    position:absolute;
+    z-index:1;
+    margin-top:80px;
+    opacity:0;
+    transition: opacity 0.3s linear;
+}
+
+.list:hover .tooltip{
+    opacity:1;
+    transition: opacity 0.3s linear;
+
+}
